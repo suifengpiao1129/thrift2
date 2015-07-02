@@ -21,7 +21,7 @@ public class ThriftServer {
 	         args.processor(process);
 	         args.protocolFactory(portFactory);
 	         TServer server = new TThreadPoolServer(args);
-	         System.out.println("port 55909 start!!!");
+	         System.out.println("port 55909 start!");
 	         server.serve();
 		}catch(TTransportException e){
 			e.printStackTrace();
